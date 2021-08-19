@@ -1,78 +1,75 @@
 # mdmd
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/09f3d43e-d9e3-4cb1-8687-f214c72345ab/Untitled.png)
+![4 아이디중복확인버튼 캡쳐](https://user-images.githubusercontent.com/45057466/130065894-989b9c53-9964-4609-a5f4-b3d70bb50d43.png)
+![캡처](https://user-images.githubusercontent.com/45057466/130065899-f2aa2728-6d42-4bbe-ac28-a82f3db576a4.PNG)
+![1 메인에서회원가입 버튼 누르는거](https://user-images.githubusercontent.com/45057466/130065904-80672d66-b71f-4db4-991e-9fda25764df4.png)
+![2 회원가입모달창](https://user-images.githubusercontent.com/45057466/130065908-95861e80-43df-42f2-aaa0-417b708ea2f4.png)
+![3 각항목별 null](https://user-images.githubusercontent.com/45057466/130065912-894174c6-caa6-4838-8c51-bd8759aa22d3.png)
+
 
 1. 회원가입 시도
-
-    ![회원가입 버튼 누르는거.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3292e2b1-215f-4d73-af6f-f3d54ea31c1a/회원가입_버튼_누르는거.png)
+    ![1 메인에서회원가입 버튼 누르는거](https://user-images.githubusercontent.com/45057466/130065904-80672d66-b71f-4db4-991e-9fda25764df4.png)
 
     - 회원가입 모달창
-
-        ![회원가입 화면 버튼 화살표.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5827c89e-1734-4dfb-b3ec-c62d056c06c0/회원가입_화면_버튼_화살표.png)
+        ![2 회원가입모달창](https://user-images.githubusercontent.com/45057466/130065908-95861e80-43df-42f2-aaa0-417b708ea2f4.png)
 
     - 유효성(이메일, 휴대폰, 인증번호, 이름, 아이디, 비밀번호, 비밀번호 확인)
         - Success: 회원가입 성공 알림
         - Fail: 각 실패항목+Fail 메세지
             - 각 항목별 null일때
-
-                ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b16635d1-687f-4745-9b21-576ac99db9c2/Untitled.png)
+                ![3 각항목별 null](https://user-images.githubusercontent.com/45057466/130065912-894174c6-caa6-4838-8c51-bd8759aa22d3.png)
 
             - 아이디 중복 체크 버튼
-
-                ![중복확인버튼 캡쳐.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/998d9391-9503-407b-aacc-e353bde79ed9/중복확인버튼_캡쳐.png)
+                ![4 아이디중복확인버튼 캡쳐](https://user-images.githubusercontent.com/45057466/130065894-989b9c53-9964-4609-a5f4-b3d70bb50d43.png)
 
                 - Success : 사용가능한 아이디입니다.
-
-                    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa3434f5-9242-4c8f-a694-bf00c2225173/Untitled.png)
+                    ![5 사용가능한 아이디입니다](https://user-images.githubusercontent.com/45057466/130065913-d09913d7-28a3-424b-8387-dea621e9b86e.png)
 
                 - Fail: 사용중인 아이디입니다.
+                    ![6 사용중인 아이디입니다](https://user-images.githubusercontent.com/45057466/130065914-89603a64-33d8-49ab-8a3d-c0d52e325efb.png)
+                    
+            - 휴대폰 인증
 
-                    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9a05392-3673-4fea-8504-c1aafc5cc145/Untitled.png)
+                ![7 휴대폰인증번호가 전송되었습니다](https://user-images.githubusercontent.com/45057466/130065850-5bc19d43-4125-4d29-97bc-7f444279000d.png)
+                ![8 휴대폰 인증 폰 캡쳐](https://user-images.githubusercontent.com/45057466/130065852-029088ca-fd55-4279-ad56-fa8339af5094.png)
 
-            - 유효성 검사
+            - 비밀번호 확인
+                - Success
+                    ![9 비밀번호확인o](https://user-images.githubusercontent.com/45057466/130065885-382a64a7-43bc-4145-87d1-3e2fa5616207.png)
+
+                - Fail
+                    ![10 비밀확인x](https://user-images.githubusercontent.com/45057466/130065887-5d0251d8-3f26-4519-80c8-66c7f40194ea.png)
+                    
+            - 그 외 유효성 검사
                 - Fail
                     - 이메일 : 이메일 형식에 맞게 입력(ex) ㅇㅇㅇ@ㅇㅇㅇ.ㅇㅇㅇ)
                     - 비밀번호 : 영문, 숫자, 특수문자 포함 9자리 이상 16자리 이하
-                    - 휴대폰 인증 일치
-
-                    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/82a046cd-30da-49fd-b6e4-39f139f80528/Untitled.png)
-
-                - 비밀번호 확인
-                    - Success
-
-                        ![비밀번호확인o.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5bc927fb-4b1c-4a32-8bf0-1a8715986acc/비밀번호확인o.png)
-
-                    - Fail
-
-                        ![비밀확인x.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4f0b0a4c-4650-498b-84a0-25feb19037d9/비밀확인x.png)
-
-            - 휴대폰 인증
-
-                ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f02d00e3-4a4e-49d6-97c0-21783d65bb3d/Untitled.png)
-
-                ![휴대폰 인증 캡쳐.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6773d29-818a-4fea-a260-26d42272d36b/휴대폰_인증_캡쳐.png)
+                    - 휴대폰 인증 일치하지 않을때
+                    ![11 유효성검사실패](https://user-images.githubusercontent.com/45057466/130065916-f88524ac-df5f-4773-b45b-93e1529882d6.png)
+           
 
 2. 로그인
+    ![12 로그인화면](https://user-images.githubusercontent.com/45057466/130065855-c9c6df46-11c3-4541-98ce-41df21b0e19c.png)
 
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8d73283c-d859-42d2-8d06-3a1ee23f682a/Untitled.png)
 
     - 유효성
         - Success: 로그인 성공 alert
         - Fail: 아이디와 비밀번호를 확인해주세요 alert
+            ![13 로그인실패](https://user-images.githubusercontent.com/45057466/130065857-2e8a7e3f-aeae-4a9e-85f5-b47ead596cbf.png)
 
-            ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/926e72ef-ca0d-4961-9a2e-62ab50bb4852/Untitled.png)
 
 3. 회원정보 관리
     - **본인 확인 절차 선행 필수 (비밀번호로 확인)**
+        ![14 회원정보모달창](https://user-images.githubusercontent.com/45057466/130065860-555141ab-205e-4ff9-be7b-72f93d6abf12.png)
 
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aec8a446-c220-4c2d-9532-12d9a5bb9bfc/Untitled.png)
 
         - Success
-
             ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/04aaf247-e327-4881-9ebc-baa77ec91ca6/Untitled.png)
+            ![15 회원정보창](https://user-images.githubusercontent.com/45057466/130065862-7468a6da-df60-47f0-af76-b86b94ea6746.png)
+
 
         - Fail : 잘못된 비밀번호 입니다.
-
-            ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/83c18f2c-7d4c-43e3-b1c4-763e45c3b42c/Untitled.png)
+            ![16 회원정보창잘못된비밀번호](https://user-images.githubusercontent.com/45057466/130065865-b76af819-75bc-44a0-a6d9-6a942095ddcb.png)
 
     - 비밀번호 수정
         - 유효성 검사
@@ -96,7 +93,8 @@
         - Fail
 5. 메뉴바 선택
 
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/adca3247-8615-4f07-9a67-a575f98d638e/Untitled.png)
+    ![17 메뉴바](https://user-images.githubusercontent.com/45057466/130065866-6c4eafdd-8642-4d53-8a09-8121f5c4b5dd.png)
+
 
     1. 실시간 버스킹 목록
     2. 선호하는 버스킹 장르 목록 선택
@@ -104,12 +102,13 @@
     3. 랭킹 TOP 5
     4. 버스킹 생성 이력
 
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b574f35e-bb90-450d-b011-7a413e3a007a/Untitled.png)
+        ![18 회의이력](https://user-images.githubusercontent.com/45057466/130065875-3a7e73db-f604-4c0e-83e5-e67f4404b53e.png)
+
 
 6. 버스킹 검색
 7. 버스킹 생성
 
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0da40e90-9a75-49d0-8e8d-2b0aed852e0e/Untitled.png)
+    ![19 버스킹생성](https://user-images.githubusercontent.com/45057466/130065880-d0229a94-748d-4199-896f-5714ac32a51e.png)
 
     - 버스킹 정보 입력
         - 이름, 썸네일, 장르, 참여인원, 상세설명 입력
@@ -129,7 +128,9 @@
 9. 버스킹 상세
     1. 버스킹 입장
 
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9b4f3ffa-79f9-4719-916f-dd313fd75586/Untitled.png)
+        ![20 버스킹입장](https://user-images.githubusercontent.com/45057466/130065881-2c77a72f-17d0-424b-bb77-4f8e9ff18ca5.png)
+
+
 
         - Success
         - Fail
@@ -147,13 +148,16 @@
 11. 채팅
     - 이름-내용
 
-        ![채팅.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d58e951e-3004-4ace-a8eb-a1eb40975a30/채팅.png)
+        ![21 채팅](https://user-images.githubusercontent.com/45057466/130065896-04af6030-4436-41fd-ae77-7d4f3dd9ddce.png)
+
 
 12. 좋아요
 
-    ![좋아요.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b0bf8350-610e-495d-8804-9a77f61c0755/좋아요.png)
+    ![22 좋아요](https://user-images.githubusercontent.com/45057466/130065890-b692bdab-ad46-4b15-af3d-27c7f5bea404.png)
+
 
     - 좋아요 누르기 : 동전이 위에서 밑으로 떨어지는 애니메이션 효과(1회)
 13. 화상 화면
 
-    ![화상화면.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0e6b8342-eafe-4d2f-9e45-c4a838693923/화상화면.png)
+    ![23 화상화면](https://user-images.githubusercontent.com/45057466/130065902-d3ef6bbc-fec4-4364-ba5c-5bfce0ed386f.png)
+
